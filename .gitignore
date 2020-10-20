@@ -1,0 +1,6 @@
+# Cache and compiled
+__pycache__/
+*.pyc
+
+# Outputs
+*.out
