@@ -1,0 +1,7 @@
+### CRONTAB SETUP ###
+
+14 03 * * * python ~/horapiBOT/aviso.py > ~/horapiBOT/aviso.out 2>&1
+13 03 * * * python ~/horapiBOT/favs.py > ~/horapiBOT/favs.out 2>&1
+
+16 03 * * * pkill -9 python
+17 03 * * * cat ~/horapiBOT/favs.out | mail -s "HORA PI favs log" antoniogs9@hotmail.es
