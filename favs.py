@@ -17,7 +17,9 @@ class FavRetweetListener(tweepy.StreamListener):
         try:
             if tweet.user.id == self.me.id:
                 return
-            if tweet.created_at.hour==1 and tweet.created_at.minute==14 and not tweet.favorited:
+	# CAMBIAR SEGÚN HORARIO #
+	   #if tweet.created_at.hour==1 and tweet.created_at.minute==14 and not tweet.favorited:
+            if tweet.created_at.hour==2 and tweet.created_at.minute==14 and not tweet.favorited:
                 try:
                     tweet.favorite()
                     logger.info("Dado fav a: "+str(tweet.id))
