@@ -9,4 +9,4 @@ Hello! I'm a bot that likes every *hora pi* tweet and post one as a reminder, to
 >```
 >sudo apt-get install python-pip
 >pip install tweepy
-```
+>```
